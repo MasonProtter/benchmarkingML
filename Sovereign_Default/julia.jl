@@ -1,5 +1,5 @@
 using Pkg
-"Strided" in keys(Pkg.installed()) ? Pkg.add("Strided") : nothing
+"Strided" in keys(Pkg.installed()) ? nothing : Pkg.add("Strided")
 
 using DelimitedFiles, Statistics, Strided
 
