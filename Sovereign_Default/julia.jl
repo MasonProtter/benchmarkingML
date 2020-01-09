@@ -1,3 +1,6 @@
+using Pkg
+"Strided" in keys(Pkg.installed()) ? pkg"add Strided" : nothing
+
 using DelimitedFiles, Statistics, Strided
 
 # Load grid for log(y) and transition matrix
